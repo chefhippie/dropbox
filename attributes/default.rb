@@ -17,6 +17,14 @@
 # limitations under the License.
 #
 
-default["dropbox"]["packages"] = %w(
-  dropbox
+default["dropbox"]["packages"] = value_for_platform_family(
+  "debian" => %w(
+    nautilus-dropbox
+  ),
+  "ubuntu" => %w(
+    nautilus-dropbox
+  ),
+  "suse" => %w(
+    dropbox
+  )
 )
