@@ -26,5 +26,6 @@ default["dropbox"]["packages"] = value_for_platform_family(
   ),
   "suse" => %w(
     dropbox
+    nautilus
   )
 )
