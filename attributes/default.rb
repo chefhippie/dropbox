@@ -21,9 +21,6 @@ default["dropbox"]["packages"] = value_for_platform_family(
   "debian" => %w(
     nautilus-dropbox
   ),
-  "ubuntu" => %w(
-    nautilus-dropbox
-  ),
   "suse" => %w(
     dropbox
     nautilus
